@@ -39,7 +39,7 @@ getgenv().SilentAim = {
     FOVSides = 12,
     FOVColour = Color3fromRGB(255, 255, 255),
     VisibleCheck = true,
-    FOV = 15,
+    FOV = 45,
     HitChance = 100,
     Selected = LocalPlayer,
     SelectedPart = nil,
@@ -62,7 +62,7 @@ local SilentAim = getgenv().SilentAim
 -- // Show FOV
 local circle = Drawingnew("Circle")
 circle.Transparency = 1
-circle.Thickness = 2
+circle.Thickness = 0
 circle.Color = SilentAim.FOVColour
 circle.Filled = false
 function SilentAim.UpdateFOV()
